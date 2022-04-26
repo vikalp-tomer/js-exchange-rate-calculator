@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+</head>
+
+<body class="bg-slate-700 min-h-screen flex items-center justify-center text-white text-xl">
+  <span class="text-2xl font-bold fixed top-0 mt-2">Developed By <a class="border-b-2 hover:text-slate-300 hover:border-b-slate-300" href="https://github.com/vikalp-tomer">Vikalp Tomer</a></span>
+  <div class="wrapper max-w-sm bg-slate-900 p-8 rounded-lg">
+    <h2 class="text-center text-2xl font-bold mb-1 text-slate-300 ">Exchange Rate Calculator</h2>
+    <div>
+      <select class="text-black w-full px-2 py-1 mb-2 text-center" name="" id="c1">
+        <option value="INR">INR</option>
+        <option value="USD" selected>USD</option>
+        <option value="JPY">JPY</option>
+        <option value="AUD">AUD</option>
+        <option value="EUR">EUR</option>
+      </select>
+      <input class="w-full rounded-sm mb-3 text-black focus:text-black text-center" type="number" value="1" id="a1">
+    </div>
+    <div>
+      <button class="px-2 py-1 rounded-lg bg-slate-700 my-2 w-full hover:bg-slate-900 transition-all duration-300" id="swap">Swap Currency</button>
+      <div class="text-slate-300 text-center mb-2" id="rate">
+
+      </div>
+    </div>
+    <div>
+      <select class="text-black w-full px-2 py-1 mb-2 text-center" name="" id="c2">
+        <option value="INR">INR</option>
+        <option value="USD">USD</option>
+        <option value="JPY">JPY</option>
+        <option value="AUD">AUD</option>
+        <option value="EUR">EUR</option>
+      </select>
+      <input class="w-full rounded-sm mb-3 text-black focus:text-black text-center" type="number" id="a2">
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
